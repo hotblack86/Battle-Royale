@@ -1,4 +1,5 @@
 require './app.rb'
+require './lib/player.rb'
 
 
 feature 'Entering Names' do

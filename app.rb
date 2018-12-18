@@ -30,6 +30,7 @@ class Battle < Sinatra::Base
         #@player_2 = $player_2
         @game = $game
         @game.attack(@game.player_2)
+        @game.switch_turns
         erb(:attack)
     end
 

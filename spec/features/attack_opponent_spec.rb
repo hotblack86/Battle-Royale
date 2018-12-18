@@ -1,9 +1,9 @@
 require './app.rb'
-require 'player.rb'
+require './lib/player.rb'
 
 
-feature 'Hit Points' do
-    scenario 'Allows user to see HP of opponent' do
+feature 'Attack Player 2' do
+    scenario 'Allows user to attack opponent and see new HP' do
         sign_in_and_play
         click_link 'Attack'
         expect(page).to have_content 'Captain Ahab attacked Moby Dick!'
